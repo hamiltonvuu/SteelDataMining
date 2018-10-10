@@ -1,0 +1,64 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{box\}}{\leveltext\leveltemplateid1\'01\uc0\u9643 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid2\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid102\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww14200\viewh7820\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl288\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 2018 - DTC TEAM SECTION 17 TEAM 1\
+Polynomial Regression\
+\
+Explanation of code and various files:\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\sl360\slmult1\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	
+\f1 \uc0\u9643 
+\f0 	}matlab_data.xlsx: Editable Excel spreadsheet of data used (make edits to this and export as .csv)\
+{\listtext	
+\f1 \uc0\u9643 
+\f0 	}matlab_data.csv: Similar to .xlsx file, but this is read by polynomial_regression.m \
+{\listtext	
+\f1 \uc0\u9643 
+\f0 	}lumped_ASP_coefficients/ASP_coefficients.xlsx: Excel spreadsheet that holds the resultant coefficients of the polynomial using lumped_ASP/ASP that calculates FS\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\sl360\slmult1\pardirnatural\partightenfactor0
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}P: Phosphorous\
+{\listtext	\uc0\u8259 	}S: Sulfur\
+{\listtext	\uc0\u8259 	}RR: Reduction Ratio\
+{\listtext	\uc0\u8259 	}I: Total Inclusions\
+{\listtext	\uc0\u8259 	}HVN: Vickers Hardness\
+{\listtext	\uc0\u8259 	}ASP: Austenite Stability Parameter\
+{\listtext	\uc0\u8259 	}lumpASP: Lumped Hardness Corrected ASP\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\sl360\slmult1\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	
+\f1 \uc0\u9643 
+\f0 	}isolations.jpg: Graph that visualizes the predicted effect of lumpASP/ASP effect on FS. Scatter plot represents the real effect of lumpASP/ASP on FS\
+{\listtext	
+\f1 \uc0\u9643 
+\f0 	}residuals.jpg: Graph that visualizes the actual v predicted values of FS from the respective model\
+{\listtext	
+\f1 \uc0\u9643 
+\f0 	}polynomial_regression.m: MATLAB script that utilizes polynomial regression to create two models, creates both coefficient spreadsheets, and creates both graphs\
+{\listtext	
+\f1 \uc0\u9643 
+\f0 	}feature_selection.m: MATLAB function used by polynomial regression that receives a MATLAB modified version of the spreadsheet, and returns the best parameters for the model that predict FS\
+{\listtext	
+\f1 \uc0\u9643 
+\f0 	}trainRegressionModel1.m: MATLAB function that does the polynomial regression with lumpASP\
+{\listtext	
+\f1 \uc0\u9643 
+\f0 	}trainRegressionModel2.m: MATLAB function that does the polynomial regression with ASP\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl360\slmult1\pardirnatural\partightenfactor0
+\cf0 \
+How to run code:\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\sl360\slmult1\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	1.	}Make any changes to the data in matlab_data.xlsx\
+{\listtext	2.	}Save the Excel spreadsheet as a .csv file\
+{\listtext	3.	}Open polynomial_regression.m and run the script\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\sl360\slmult1\pardirnatural\partightenfactor0
+\ls2\ilvl1\cf0 {\listtext	\uc0\u8259 	}WARNING: Running the script will replace the isolations.jpg, residuals.jpg, and both coefficient spreadsheets. If you plan on using these, back this files up elsewhere before running the script. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl288\slmult1\pardirnatural\partightenfactor0
+\cf0 \
+\
+}
